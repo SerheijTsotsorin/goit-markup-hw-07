@@ -1,0 +1,126 @@
+.page-header {
+  border-bottom: 1px solid var(--hedear-border-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  padding-top: 25px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
+.logo-span-web {
+  font-family: var(--secondary-font);
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.menu__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.menu__link.link.current {
+  color: var(--accent-color);
+}
+
+.menu__link.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__mail-link,
+.contacts__tel-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__mail-link:hover,
+.contacts__mail-link:focus,
+.contacts__tel-link:hover,
+.contacts__menu-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts__icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__icon-tell {
+  margin-right: 10px;
+  fill: currentColor;
+}
