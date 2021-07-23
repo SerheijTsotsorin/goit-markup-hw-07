@@ -16,8 +16,10 @@
   width: 231px;
 }
 
-.main-contacts-item:not(:last-child) {
-  margin-bottom: 9px;
+.main-contacts-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .main-contacts-address {
@@ -68,8 +70,10 @@
   display: flex;
 }
 
-.footer-social-list-item:not(:last-child) {
-  margin-right: 10px;
+.footer-social-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-social-list-link {

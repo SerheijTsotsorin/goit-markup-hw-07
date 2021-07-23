@@ -359,7 +359,7 @@ body {
   color: var(--accent-color);
 }
 
-.menu__link.link.current {
+.menu__link.current {
   color: var(--accent-color);
 }
 
@@ -384,8 +384,7 @@ body {
   margin-right: 50px;
 }
 
-.contacts__mail-link,
-.contacts__tel-link {
+.contacts-link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -398,10 +397,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__mail-link:hover,
-.contacts__mail-link:focus,
-.contacts__tel-link:hover,
-.contacts__menu-link:focus {
+.mail-link:hover, .mail-link:focus {
+  color: var(--accent-color);
+}
+
+.tel-link:hover, .tel-link:focus {
   color: var(--accent-color);
 }
 

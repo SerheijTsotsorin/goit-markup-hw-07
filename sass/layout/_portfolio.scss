@@ -31,9 +31,10 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-
-.btn-portfolio-item:not(:last-child) {
-  margin-right: 8px;
+.btn-portfolio-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .portfolio-link-list-title {
